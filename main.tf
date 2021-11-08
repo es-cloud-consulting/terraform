@@ -34,7 +34,6 @@ resource "aws_instance" "app_server" {
     type        = "ssh"
     host        = self.public_ip
     user        = "welsayedaly"
-    private_key = file("/Users/walidelsayedaly/.ssh/ec2-deployer-key-pair")
     timeout     = "4m"
   }
 
