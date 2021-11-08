@@ -31,10 +31,10 @@ resource "aws_instance" "app_server" {
     Name = "First-Ec2-With-Terraform"
   }
   connection {
-    type        = "ssh"
-    host        = self.public_ip
-    user        = "welsayedaly"
-    timeout     = "4m"
+    type    = "ssh"
+    host    = self.public_ip
+    user    = "welsayedaly"
+    timeout = "4m"
   }
 
 }
